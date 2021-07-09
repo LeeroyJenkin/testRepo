@@ -3,7 +3,7 @@ name: Random Linter
 on: push
 
 jobs:
-  super-lint: 
+  run-lint: 
     name: Run the linter on the code base
     runs-on: ubuntu-latest
     steps: 
