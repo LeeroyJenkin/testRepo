@@ -1,0 +1,14 @@
+name: Random Linter
+
+on: push
+
+jobs:
+  super-lint: 
+    name: Run the linter on the code base
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout into the code base
+        uses: actions/checkout@v2
+        
+      - name: Run linter
+        uses: github/super-linter@v3
